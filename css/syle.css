@@ -1,0 +1,79 @@
+/* google font family link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* common css style */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --primary: #F3F1FF;
+   --secondary: #562EFF;
+   --white: #fff;
+   --black: #000;
+   --color1: #9F9F9F;
+   --color2: #ED6B4F;
+}
+
+
+
+body {
+   background: var(--primary);
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+   max-width: 870px;
+   margin: 0 auto;
+   background: var(--white);
+   padding: 0 30px;
+}
+
+.section-heading {
+   color: var(--secondary);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 36px;
+   padding: 33px 0 0 0;
+}
+
+
+/* Top player area style */
+
+.players {
+   padding: 33px 0;
+}
+
+.player {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 29px;
+}
+
+.player-info {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.player-info img {
+   width: 56px;
+   margin-right: 15px;
+}
+
+.player-info h4 {
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 27px;
+   color: var(--black);
+}
+
+hr {
+   border: 1px solid #D1D1D1;
+}
