@@ -16,6 +16,8 @@
    --black: #000;
    --color1: #9F9F9F;
    --color2: #ED6B4F;
+   --color3: #1E1E1E;
+   --color4: #A2A2A2;
 }
 
 
@@ -68,7 +70,7 @@ img {
    margin-right: 15px;
 }
 
-.player-info h4 {
+.player-name {
    font-size: 18px;
    font-weight: 500;
    line-height: 27px;
@@ -85,7 +87,7 @@ hr {
    grid-template-columns: repeat(2, 1fr);
    padding: 30px 0;
    row-gap: 26px;
-   column-gap: 60px;
+   column-gap: 30px;
 }
 
 .blog {
@@ -100,7 +102,7 @@ hr {
    margin-right: 16px;
 }
 
-.blog-details>h3 {
+.blog-title {
    font-size: 20px;
    font-weight: 500;
    line-height: 34px;
@@ -108,13 +110,97 @@ hr {
    margin-bottom: 6px;
 }
 
-.blog-details>p {
+.blog-author {
    font-size: 16px;
    font-weight: 400;
    line-height: 24px;
-   color: var(--secondary);
+   color: var(--color1);
+
 }
 
-.blog-details>p>span {
-   color: var(--color1);
+.blog-author>a {
+   color: var(--secondary);
+   text-decoration: none;
+}
+
+/* Lates Course section style */
+#course {
+   margin: 21px 0 28px 0;
+}
+
+.course-box {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 23px;
+}
+
+.course-details {
+   padding: 14px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   margin: 22px 0;
+   border-radius: 10px;
+}
+
+.course-item>img {
+   width: 224px;
+   height: 104px;
+   object-fit: cover;
+}
+
+.course-title {
+   margin: 20px 0 7px 0;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 23px;
+   color: var(--color3);
+}
+
+.course-item>p {
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--color2);
+   margin-bottom: 20px;
+}
+
+.course-review {
+   display: flex;
+   align-items: center;
+}
+
+.star {
+   width: 60%;
+}
+
+.duration {
+   width: 40%;
+}
+
+.star>img {
+   width: 16px;
+}
+
+.star>span {
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--color4);
+}
+
+.duration {
+   background: #FEE5DF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   padding: 5px 0;
+}
+
+.duration>img {
+   width: 22px;
+   margin-right: 4px;
+}
+
+.duration>span {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--color2);
 }
